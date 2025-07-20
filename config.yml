@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts", "home-page-list"]
 
 minify:
   disableXML: true
@@ -44,67 +44,6 @@ languages:
         - name: WiKi
           url: https://github.com/adityatelange/hugo-PaperMod/wiki/
 
-  fr:
-    languageName: ":fr:"
-    weight: 2
-    title: PaperModL2
-    taxonomies:
-      category: FRcategories
-      tag: FRtags
-      series: FRseries
-    menu:
-      main:
-        - name: Archive
-          url: archives/
-          weight: 5
-        - name: FRTags
-          url: frtags
-          weight: 10
-        - name: FRCategories
-          url: frcategories
-          weight: 10
-        - name: FRSeries
-          url: frseries
-          weight: 10
-        - name: NullLink
-          url: "#"
-
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      languageAltTitle: French
-      profileMode:
-        enabled: true
-        title: Octavian Tocan
-        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-        imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-        buttons:
-          - name: Blog
-            url: posts
-          - name: Profile Mode
-            url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-
-  fa:
-    languagedirection: rtl
-    weight: 3
-    title: PaperMod RTL
-    taxonomies:
-      category: FAcategories
-      tag: FAtags
-      series: FAseries
-    menu:
-      main:
-        - name: FATags
-          url: fatags
-          weight: 10
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to RTL layout
-
 outputs:
   home:
     - HTML
@@ -113,8 +52,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
+  description: "Octavian Tocan Blog"
+  author: Octavian Tocan
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -133,68 +72,59 @@ params:
   # comments: false
   images: ["images/papermod-cover.png"]
 
-  profileMode:
-    enabled: false
-    title: "Octavian Tocan"
-    subtitle: "Welcome to my blog!"
-    imageUrl: "#"
-    imageTitle: my image
-    imageWidth: 120
-    imageHeight: 120
-    buttons:
-      - name: Archives
-        url: "/archives"
-      - name: Github
-        url: "https://github.com/OctavianTocan"
+  # profileMode:
+  #   enabled: false
+  #   title: "Octavian Tocan"
+  #   subtitle: "Welcome to my blog!"
+  #   imageUrl: "#"
+  #   imageTitle: my image
+  #   imageWidth: 120
+  #   imageHeight: 120
+  #   buttons:
+  #     - name: Archives
+  #       url: "/archives"
+  #     - name: Github
+  #       url: "https://github.com/OctavianTocan"
 
   homeInfoParams:
     Title: "Welcome to My Corner of the Web 👋"
     Content: >
-      <p>I’m Tavi (Octavian), and this is where I share the messy, iterative, and surprisingly rewarding process of making things—be it code, games, or just a better workflow.</p>
+      <p>Hey, I'm Tavi (Octavian), and this is where I document the messy, iterative reality of building things—whether that's debugging Unreal Engine performance issues, architecting workflow automation, or just trying to figure out why this one piece of code works perfectly in isolation but breaks everything in production.</p>
       <br>
-      <p>If you’re into understanding how stuff really works (not just the hype), thinking in systems, and trading comfort for clarity, you’ll probably feel at home here. I write about game development, automation, the business of digital assets, and occasionally, the neuroscience of motivation or whatever rabbit hole I’ve fallen into lately.</p>
+      <p>I’m obsessed with finding the best approach to any given problem, and thus I’m constantly switching approaches (which makes me a headache to work with, at times). But I think that’s where the interesting stuff happens. You probably won’t see a blog post from me claiming to have a “perfect solution to x” without a follow-up post discussing some other approach I found; it’s just the nature of the beast.</p>
       <br>
-      <p>This blog is for:</p>
+      <p>This space is for creators who get energized by understanding systems from the ground up—not just following tutorials, but actually grasping the underlying mechanics. I explore game development workflows, asset optimization strategies, and the business side of digital creation, often while actively working through problems and sharing the uncertainty along the way.</p>
+      <br>
+      <p><strong>You'll probably vibe with this if you:</strong></p>
       <ul>
-        <li>Indie creators, devs, and tinkerers who want practical insights over perfection.</li>
-        <li>Anyone who appreciates honest takes, context, and actionable advice.</li>
-        <li>People who believe work can be both creative and systematic (and sometimes a bit chaotic).</li>
+      <li>Build things independently and want practical insights over theoretical perfection</li>
+      <li>Appreciate honest breakdowns of what actually worked (and the spectacular failures)</li>
+      <li>Believe in systematic approaches to creative work, even when things get chaotic</li>
       </ul>
       <br>
-      <p>What you’ll find here:</p>
+      <p><strong>What I'm actively exploring:</strong></p>
       <ul>
-        <li>Step-by-step breakdowns of my projects and what actually worked (and what didn’t).</li>
-        <li>Posts on optimizing Unreal Engine assets, automating workflows, and making side projects profitable.</li>
-        <li>Thoughts on staying focused, emotionally grounded, and productive in a world full of noise.</li>
-        <li>Occasional, low-key jokes and experiments with AI—because, why not?</li>
-      </ul>
-      <br>
-      <p>Thoughts on staying focused, emotionally grounded, and productive in a world full of noise.</p>
-      <p>Occasional, low-key jokes and experiments with AI—because, why not?</p>
-      <br>
-      <p>Current Obsessions:</p>
-      <ul>
-        <li>Making the Unreal Engine Marketplace a better place (for devs and buyers).</li>
-        <li>Building tools that let you spend less time on busywork.</li>
-        <li>Figuring out how to do “less, but better.”</li>
+      <li>Making Unreal Engine Marketplace development more sustainable for indie creators</li>
+      <li>Automation tools that eliminate busywork without over-engineering solutions</li>
+      <li>The "less, but better" philosophy applied to technical projects</li>
       </ul>
 
   socialIcons:
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
+    - name: GitHub
+      title: Check my GitHub
+      url: "https://github.com/OctavianTocan"
     - name: Discord
       title: Join discord community
       url: "https://discord.gg/ahpmTvhVmp"
     - name: X
-      title: Share PaperMod on X/Twitter
-      url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+      title: Follow me on X
+      url: "https://x.com/OctavianTocan"
     - name: KoFi
       title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/adityatelange"
+      url: "https://ko-fi.com/OctavianTocan"
 
   editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
