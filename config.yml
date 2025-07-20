@@ -124,7 +124,7 @@ params:
       url: "https://ko-fi.com/OctavianTocan"
 
   editPost:
-    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/content"
+    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/blob/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 

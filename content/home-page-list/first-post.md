@@ -9,6 +9,10 @@ categories: ["themes", "syntax"]
 series: ["First Post"]
 ShowToc: true
 TocOpen: true
+editPost:
+    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/blob/main/content/home-page-list/first-post.md"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
 ---
 
 # First Post
