@@ -15,11 +15,11 @@
     <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/home-page-list/first-post/</link>
+      <title>Helping AI help me make games</title>
+      <link>http://localhost:1313/home-page-list/helping-ai-help-me-make-games/</link>
       <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home-page-list/first-post/</guid>
-      <description>First Post</description>
+      <guid>http://localhost:1313/home-page-list/helping-ai-help-me-make-games/</guid>
+      <description>Helping AI help me make games</description>
     </item>
   </channel>
 </rss>
