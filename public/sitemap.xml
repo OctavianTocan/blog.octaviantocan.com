@@ -11,15 +11,6 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/first/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/home-page-list/first-post/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/series/first-post/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/home-page-list/helping-ai-help-me-make-games/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,13 +26,7 @@
     <loc>http://localhost:1313/series/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/themes/</loc>
     <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/unreal-engine/</loc>
@@ -53,6 +38,8 @@
     <loc>http://localhost:1313/archives.fr/</loc>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
+  </url><url>
+    <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>

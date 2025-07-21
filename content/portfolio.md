@@ -1,0 +1,96 @@
+---
+title: "Portfolio 🛠️"
+layout: "single"
+url: "/portfolio/"
+---
+
+A collection of things I've built, broken, and rebuilt. Each project tells the story of what I thought would work, 
+what actually worked, and everything I learned in between. Because the best solutions usually come after the third attempt.
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://img.itch.zone/aW1nLzE0MzUzNjM3LnBuZw==/original/Fp6Cly.png" alt="Low Poly Shooter Pack - FPS gameplay screenshot showing weapon and UI" />
+    </div>
+    <h2 class="project-title">Low Poly Shooter Pack v6.0</h2>
+    <div class="project-meta">Unreal Engine 5 • January 2024 • Template</div>
+    <p class="project-description">
+        What started as a simple FPS template turned into our flagship product. Thousands of developers use it to build 
+        their shooter games without spending months on basic mechanics. Features 18 weapons, multiplayer support, AI enemies, 
+        and 240+ weapon materials. From prototypes to published games, it's been quite the journey watching developers 
+        build amazing things with it. <a href="#">Try the free demo</a> or check out the <a href="#">full template on the marketplace</a>.
+    </p>
+</article>
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://img.itch.zone/aW1nLzE0NDIxOTc2LnBuZw==/original/jQv8sL.png" alt="Realistic Assault Rifle Template - High-quality FPS weapon system" />
+    </div>
+    <h2 class="project-title">Realistic Assault Rifle Template</h2>
+    <div class="project-meta">Unreal Engine 5 • March 2024 • FPS Template</div>
+    <p class="project-description">
+        After years of low-poly assets, we decided to go realistic. This template features high-fidelity graphics, 
+        modular weapon attachments, and professional-grade animations. Includes advanced movement mechanics like sliding, 
+        vaulting, and tactical sprint. The biggest challenge was balancing visual fidelity with performance—turns out 
+        realistic graphics require realistic optimization efforts. <a href="#">Download the free demo</a> to see if it's right for your project.
+    </p>
+</article>
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://img.itch.zone/aW1hZ2VzLzE0MzUzNjM4LnBuZw==/original/kxTyHY.png" alt="Low Poly Modern Guns Pack - Collection of animated weapon models" />
+    </div>
+    <h2 class="project-title">Low Poly Animated Modern Guns Pack</h2>
+    <div class="project-meta">Unity, Unreal Engine • September 2023 • Asset Pack</div>
+    <p class="project-description">
+        Sometimes developers just need good weapon models without the full template. This pack provides animated, 
+        low-poly guns that work across Unity and Unreal Engine. Each weapon is fully rigged with swappable parts—barrels, 
+        magazines, scopes, and more. The reload animations took longer to perfect than modeling all the weapons combined. 
+        Getting the magazine physics to feel natural while remaining performance-friendly was educational. 
+        Available on <a href="#">Unity Asset Store</a> and <a href="#">Unreal Marketplace</a>.
+    </p>
+</article>
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1580234797602-22656155fa12?w=800&h=300&fit=crop" alt="Blender 3D modeling workspace showing weapon development" />
+    </div>
+    <h2 class="project-title">Blender Weapon Rigging System</h2>
+    <div class="project-meta">Blender, Python • June 2023 • Tool</div>
+    <p class="project-description">
+        After rigging dozens of weapons manually, I got tired of repeating the same setup process. This Blender add-on 
+        automates weapon rigging, attachment systems, and animation setup. What used to take hours now takes minutes. 
+        The first version tried to automate everything and failed spectacularly on edge cases. The current version handles 
+        the tedious parts while leaving creative control to the artist. Now part of our internal workflow and 
+        <a href="#">available free on GitHub</a>.
+    </p>
+</article>
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=300&fit=crop" alt="Code editor showing automated build scripts" />
+    </div>
+    <h2 class="project-title">Automated Asset Pipeline</h2>
+    <div class="project-meta">Python, PowerShell • August 2023 • DevOps</div>
+    <p class="project-description">
+        Managing assets across multiple platforms (Unity, Unreal, various marketplaces) was becoming a nightmare. 
+        Every update meant manually exporting for Unity URP, HDRP, Built-in, Unreal Engine versions, packaging for 
+        Gumroad, uploading everywhere, updating docs... Built a system that handles the entire pipeline with one command. 
+        Sure, it took three weeks to build what would've taken a few hours to do manually, but now those few hours 
+        happen automatically forever. Read about <a href="#">how the pipeline works</a>.
+    </p>
+</article>
+
+<article class="project-post">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=300&fit=crop" alt="Performance profiling charts and graphs" />
+    </div>
+    <h2 class="project-title">Unreal Engine Performance Profiler</h2>
+    <div class="project-meta">Unreal Engine 5, C++ • November 2023 • Tool</div>
+    <p class="project-description">
+        Started as a simple FPS counter overlay for debugging frame drops in projects. Ended up as a comprehensive 
+        performance monitoring suite after discovering that measuring performance... impacts performance. Go figure. 
+        Went through multiple iterations before finally cracking non-intrusive monitoring with async profiling. 
+        Currently optimizing the UI rendering pipeline because apparently I never learn. 
+        <a href="#">Download the tool</a> or read the <a href="#">development blog series</a>.
+    </p>
+</article>

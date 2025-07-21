@@ -15,9 +15,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-I've been thinking of spending a few minutes (well, more like an hour or two) on trying to connect Claude to UE5 via MCP and giving it tools which are really useful, not the tools that the MCP project I found gave it, as those seem…quite useless.
-
-### Why I'm not impressed by what I'm seeing on YouTube
+I've been giving some thought to the idea of creating an MCP for Unreal Engine that allows you to connect an AI model like Claude to Unreal Engine, not to do thing like what you see the YouTube gurus preach, like spawn cubes or create levels, which I've always found awfully lame, but instead to help enhance your daily workflows.
 
 I've been giving some thought to the idea of creating a model context protocol for Unreal Engine that would allow you to connect an AI model like Claude desktop to Unreal. But not to do things that I've seen a lot of other people tout on YouTube. Like, wow, you can spawn cubes and create levels. I've always thought that was a little... lame, I think.
 
