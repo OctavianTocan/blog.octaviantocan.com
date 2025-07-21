@@ -12,7 +12,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "home-page-list", "projects"]
+mainsections: ["posts", "home-page-list"]
 
 minify:
   disableXML: true
