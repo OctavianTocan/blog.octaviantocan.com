@@ -1,19 +1,20 @@
 /* Portfolio-specific styles */
+.project-post-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
 .project-post {
 	margin-bottom: 50px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #eee;
-	cursor: pointer;
 	transition: all 0.2s ease;
 }
 
 .project-post:last-child {
 	border-bottom: none;
 	margin-bottom: 0;
-}
-
-.project-post:hover {
-	transform: translateY(-2px);
 }
 
 .project-image {
