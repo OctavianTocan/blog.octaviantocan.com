@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="main container">
+	<h1 class="page-title">Portfolio 🛠️</h1>
+	<br>
+
+	<p class="intro">
+		A collection of things I've built, broken, and rebuilt. Each project tells the story of what I thought would
+		work,
+		what actually worked, and everything I learned in between. Because the best solutions usually come after the
+		third attempt.
+	</p>
+	<br>
+
+	{{ range .Pages.ByDate.Reverse }}
+	<article class="project-post">
+		<div class="project-image">
+			<img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
+		</div>
+		<h2 class="project-title">{{ .Title }}</h2>
+		<div class="project-meta">{{ .Params.meta }}</div>
+		<div class="project-description">{{ .Content }}</div>
+	</article>
+	{{ end }}
+</main>
+{{ end }}

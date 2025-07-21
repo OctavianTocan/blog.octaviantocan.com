@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Octavian Tocan Blog</title>
+    <title>Octavian Tocan&#39;s Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Octavian Tocan Blog</description>
+    <description>Recent content on Octavian Tocan&#39;s Blog</description>
     <image>
-      <title>Octavian Tocan Blog</title>
+      <title>Octavian Tocan&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
@@ -22,24 +22,68 @@
       <description>Helping AI help me make games</description>
     </item>
     <item>
-      <title>Portfolio 🛠️</title>
-      <link>http://localhost:1313/portfolio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/</guid>
-      <description>&lt;p&gt;A collection of things I&amp;rsquo;ve built, broken, and rebuilt. Each project tells the story of what I thought would work,
-what actually worked, and everything I learned in between. Because the best solutions usually come after the third attempt.&lt;/p&gt;
-&lt;article class=&#34;project-post&#34;&gt;
-    &lt;div class=&#34;project-image&#34;&gt;
-        &lt;img src=&#34;https://img.itch.zone/aW1nLzE0MzUzNjM3LnBuZw==/original/Fp6Cly.png&#34; alt=&#34;Low Poly Shooter Pack - FPS gameplay screenshot showing weapon and UI&#34; /&gt;
-    &lt;/div&gt;
-    &lt;h2 class=&#34;project-title&#34;&gt;Low Poly Shooter Pack v6.0&lt;/h2&gt;
-    &lt;div class=&#34;project-meta&#34;&gt;Unreal Engine 5 • January 2024 • Template&lt;/div&gt;
-    &lt;p class=&#34;project-description&#34;&gt;
-        What started as a simple FPS template turned into our flagship product. Thousands of developers use it to build 
-        their shooter games without spending months on basic mechanics. Features 18 weapons, multiplayer support, AI enemies, 
-        and 240+ weapon materials. From prototypes to published games, it&#39;s been quite the journey watching developers 
-        build amazing things with it. &lt;a href=&#34;#&#34;&gt;Try the free demo&lt;/a&gt; or check out the &lt;a href=&#34;#&#34;&gt;full template on the marketplace&lt;/a&gt;.
-    &lt;/p&gt;</description>
+      <title>Realistic Assault Rifle Template</title>
+      <link>http://localhost:1313/projects/realistic-assault-rifle/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/realistic-assault-rifle/</guid>
+      <description>&lt;p&gt;After years of low-poly assets, we decided to go realistic. This template features high-fidelity graphics,
+modular weapon attachments, and professional-grade animations. Includes advanced movement mechanics like sliding,
+vaulting, and tactical sprint. The biggest challenge was balancing visual fidelity with performance—turns out
+realistic graphics require realistic optimization efforts. &lt;a href=&#34;#&#34;&gt;Download the free demo&lt;/a&gt; to see if it&amp;rsquo;s right for your project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Low Poly Shooter Pack v6.0</title>
+      <link>http://localhost:1313/projects/low-poly-shooter-pack/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/low-poly-shooter-pack/</guid>
+      <description>&lt;p&gt;What started as a simple FPS template turned into our flagship product. Thousands of developers use it to build
+their shooter games without spending months on basic mechanics. Features 18 weapons, multiplayer support, AI enemies,
+and 240+ weapon materials. From prototypes to published games, it&amp;rsquo;s been quite the journey watching developers
+build amazing things with it. &lt;a href=&#34;#&#34;&gt;Try the free demo&lt;/a&gt; or check out the &lt;a href=&#34;#&#34;&gt;full template on the marketplace&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unreal Engine Performance Profiler</title>
+      <link>http://localhost:1313/projects/unreal-performance-profiler/</link>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/unreal-performance-profiler/</guid>
+      <description>&lt;p&gt;Started as a simple FPS counter overlay for debugging frame drops in projects. Ended up as a comprehensive
+performance monitoring suite after discovering that measuring performance&amp;hellip; impacts performance. Go figure.
+Went through multiple iterations before finally cracking non-intrusive monitoring with async profiling.
+Currently optimizing the UI rendering pipeline because apparently I never learn.
+&lt;a href=&#34;#&#34;&gt;Download the tool&lt;/a&gt; or read the &lt;a href=&#34;#&#34;&gt;development blog series&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Low Poly Animated Modern Guns Pack</title>
+      <link>http://localhost:1313/projects/low-poly-animated-guns/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/low-poly-animated-guns/</guid>
+      <description>&lt;p&gt;Sometimes developers just need good weapon models without the full template. This pack provides animated,
+low-poly guns that work across Unity and Unreal Engine. Each weapon is fully rigged with swappable parts—barrels,
+magazines, scopes, and more. The reload animations took longer to perfect than modeling all the weapons combined.
+Getting the magazine physics to feel natural while remaining performance-friendly was educational.
+Available on &lt;a href=&#34;#&#34;&gt;Unity Asset Store&lt;/a&gt; and &lt;a href=&#34;#&#34;&gt;Unreal Marketplace&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automated Asset Pipeline</title>
+      <link>http://localhost:1313/projects/automated-asset-pipeline/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/automated-asset-pipeline/</guid>
+      <description>&lt;p&gt;Managing assets across multiple platforms (Unity, Unreal, various marketplaces) was becoming a nightmare.
+Every update meant manually exporting for Unity URP, HDRP, Built-in, Unreal Engine versions, packaging for
+Gumroad, uploading everywhere, updating docs&amp;hellip; Built a system that handles the entire pipeline with one command.
+Sure, it took three weeks to build what would&amp;rsquo;ve taken a few hours to do manually, but now those few hours
+happen automatically forever. Read about &lt;a href=&#34;#&#34;&gt;how the pipeline works&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blender Weapon Rigging System</title>
+      <link>http://localhost:1313/projects/blender-weapon-rigging/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/blender-weapon-rigging/</guid>
+      <description>&lt;p&gt;After rigging dozens of weapons manually, I got tired of repeating the same setup process. This Blender add-on
+automates weapon rigging, attachment systems, and animation setup. What used to take hours now takes minutes.
+The first version tried to automate everything and failed spectacularly on edge cases. The current version handles
+the tedious parts while leaving creative control to the artist. Now part of our internal workflow and
+&lt;a href=&#34;#&#34;&gt;available free on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

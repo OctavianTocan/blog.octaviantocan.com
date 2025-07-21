@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Home-Page-Lists on Octavian Tocan Blog</title>
+    <title>Home-Page-Lists on Octavian Tocan&#39;s Blog</title>
     <link>http://localhost:1313/home-page-list/</link>
-    <description>Recent content in Home-Page-Lists on Octavian Tocan Blog</description>
+    <description>Recent content in Home-Page-Lists on Octavian Tocan&#39;s Blog</description>
     <image>
-      <title>Octavian Tocan Blog</title>
+      <title>Octavian Tocan&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
