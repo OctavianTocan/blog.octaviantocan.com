@@ -12,16 +12,18 @@
 	<br>
 
 	{{ range .Pages.ByDate.Reverse }}
-	<a href="{{ .Permalink }}" class="project-post-link">
-		<article class="project-post">
-			<div class="project-image">
+	<article class="project-post">
+		<div class="project-image">
+			<a href="{{ .Permalink }}">
 				<img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
-			</div>
+			</a>
+		</div>
+		<a href="{{ .Permalink }}">
 			<h2 class="project-title">{{ .Title }}</h2>
-			<div class="project-meta">{{ .Params.meta }}</div>
-			<div class="project-description">{{ .Content }}</div>
-		</article>
-	</a>
+		</a>
+		<div class="project-meta">{{ .Params.meta }}</div>
+		<div class="project-description">{{ .Content }}</div>
+	</article>
 	{{ end }}
 </main>
 {{ end }}

@@ -67,7 +67,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
+  ShowAllPagesInArchive: false
   ShowPageNums: true
   ShowToc: true
   # comments: false
