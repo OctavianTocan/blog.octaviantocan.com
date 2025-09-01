@@ -38,14 +38,6 @@ languages:
         - name: Search
           url: search/
           weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
-        - name: Portfolio
-          url: portfolio/
-          weight: 15
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
 
 outputs:
   home:
