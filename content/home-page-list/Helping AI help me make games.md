@@ -51,6 +51,8 @@ I could also add things like:
 - `GetFunctionExplanation(String: function_name)` - Explains what a function does in a simple manner
 - `CreateFunction(FunctionInfo: function_info)`
 
+<script async data-uid="ddfefd5c28" src="https://octavian-tocan.kit.com/ddfefd5c28/index.js"></script>
+
 ### I'm stuck on this problem...
 
 I'm not really sure if it's useful to give all the nodes and the connections like I had them in the blueprint documentation generator. But I could because I already have all the code for that. Though if I do it that way, I'm not sure if I have the benefit of saving it to memory.

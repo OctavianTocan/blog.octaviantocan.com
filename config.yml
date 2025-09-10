@@ -59,11 +59,11 @@ params:
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
@@ -86,7 +86,10 @@ params:
   #       url: "/archives"
   #     - name: Github
   #       url: "https://github.com/OctavianTocan"
-
+  footer:
+  # This hides/shows the @OctavianTocan part of the footer. Used in single.html
+    hideCopyright: false
+    text: ""
   homeInfoParams:
     Title: "Welcome to My Corner of the Web 👋"
     Content: >
