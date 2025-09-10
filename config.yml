@@ -38,6 +38,9 @@ languages:
         - name: Search
           url: search/
           weight: 10
+        - name: Portfolio
+          url: portfolio/
+          weight: 15
 
 outputs:
   home:

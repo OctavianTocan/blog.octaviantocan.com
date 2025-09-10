@@ -1,59 +1,69 @@
 /* Portfolio-specific styles */
 .project-post {
-	margin-bottom: 50px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #eee;
-	cursor: pointer;
-	transition: all 0.2s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.2s ease;
 }
 
 .project-post:last-child {
-	border-bottom: none;
-	margin-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .project-post:hover {
-	transform: translateY(-2px);
+    transform: translateY(-2px);
+    border-bottom: 1px solid var(--primary);
 }
 
 .project-image {
-	width: 100%;
-	height: 300px;
-	background: #f0f0f0;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-	border-radius: 8px;
-	overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: var(--tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
 }
 
 .project-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
-	font-size: 24px;
-	font-weight: 600;
-	color: #333;
-	margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
 }
 
 .project-meta {
-	font-size: 14px;
-	color: #999;
-	margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--secondary);
+    margin-bottom: 15px;
 }
 
 .project-description {
-	font-size: 16px;
-	color: #666;
-	line-height: 1.6;
+    font-size: 16px;
+    color: var(--content);
+    line-height: 1.6;
 }
 
 /* Simple responsive */
-@media (max-width: 768px) {
-	.project-image {
-		height: 200px;
-	}
+@media (min-width: 768px) {
+    .project-post {
+        grid-template-columns: 300px 1fr;
+    }
+    .project-image {
+        height: auto;
+    }
 }
