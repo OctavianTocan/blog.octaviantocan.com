@@ -1,0 +1,24 @@
+{{ $raw := .Inner }}
+{{ $lang := .Type }}
+{{ $opts := .Options }}
+{{ $attrs := .Attributes }}
+
+{{ $filename := "" }}
+{{ with $attrs.filename }}
+    {{ $filename = . }}
+{{ end }}
+
+<div class="code-block-container">
+    <div class="code-block-header">
+        <div>
+            {{ if $lang }}
+            <span class="code-block-language">{{ $lang }}</span>
+            {{ end }}
+            {{ if $filename }}
+            <span class="code-block-filename">{{ $filename }}</span>
+            {{ end }}
+        </div>
+        <button class="copy-code-button" aria-label="Copy code to clipboard">copy</button>
+    </div>
+    {{ highlight $raw $lang $opts }}
+</div>

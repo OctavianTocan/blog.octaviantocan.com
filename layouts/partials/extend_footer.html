@@ -1,0 +1,7 @@
+{{- if .Param "ShowToc" }}
+{{- $tocHighlight := resources.Get "js/toc-highlight.js" | resources.Minify }}
+<script defer crossorigin="anonymous" src="{{ $tocHighlight.RelPermalink }}"></script>
+{{- end }}
+
+{{- $codeCopy := resources.Get "js/code-copy.js" | resources.Minify }}
+<script defer crossorigin="anonymous" src="{{ $codeCopy.RelPermalink }}"></script>

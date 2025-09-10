@@ -1,0 +1,38 @@
+{{- $siteCTA := .Site.Params.cta -}}
+{{- $pageCTA := .Params.cta -}}
+
+{{- if and $siteCTA.enable (ne $pageCTA false) -}}
+    <div class="cta-container">
+        <h3>{{ $siteCTA.title | default "Stay Connected" }}</h3>
+        <div class="cta-content">
+            {{- with $siteCTA.description -}}
+                <p>{{ . }}</p>
+            {{- end -}}
+
+            <div class="cta-buttons">
+                {{- $primaryText := $pageCTA.primaryText | default $siteCTA.defaultPrimaryText -}}
+                {{- $primaryUrl := $pageCTA.primaryUrl | default $siteCTA.defaultPrimaryUrl -}}
+                {{- if and $primaryText $primaryUrl }}
+                <a href="{{ $primaryUrl | absURL }}" class="cta-button cta-primary">{{ $primaryText }}</a>
+                {{- end }}
+
+                {{- $secondaryText := $pageCTA.secondaryText | default $siteCTA.defaultSecondaryText -}}
+                {{- $secondaryUrl := $pageCTA.secondaryUrl | default $siteCTA.defaultSecondaryUrl -}}
+                {{- if and $secondaryText $secondaryUrl }}
+                <a href="{{ $secondaryUrl | absURL }}" class="cta-button cta-secondary">{{ $secondaryText }}</a>
+                {{- end }}
+            </div>
+
+            {{- $embedTitle := $pageCTA.embedTitle | default $siteCTA.defaultEmbedTitle -}}
+            {{- $embedHtml := $pageCTA.embedHtml | default $siteCTA.defaultEmbedHtml -}}
+            {{- if $embedHtml }}
+            <div class="cta-form">
+                {{- if $embedTitle -}}
+                <h4>{{ $embedTitle }}</h4>
+                {{- end -}}
+                {{ $embedHtml | safeHTML }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+{{- end -}}

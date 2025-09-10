@@ -15,3 +15,177 @@ iframe {
 .entry-cover img {
     border: 1px solid var(--border);
 }
+
+/* CTA Box */
+.cta-container {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background: var(--code-bg);
+    text-align: center;
+}
+
+.cta-container h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.cta-content p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.cta-primary {
+    background-color: var(--primary);
+    color: var(--primary_bg);
+}
+
+.cta-primary:hover {
+    opacity: 0.9;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.cta-secondary:hover {
+    background-color: var(--primary);
+    color: var(--primary_bg);
+}
+
+/* Embedded Form Styles */
+.cta-form {
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+}
+
+.cta-form h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Basic styles for the embedded form */
+.revue-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.revue-form-label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.revue-form-field {
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--bg);
+    color: var(--content);
+    width: 80%;
+    max-width: 400px;
+}
+
+.revue-form-actions {
+    margin-bottom: 0.5rem;
+}
+
+.revue-form-submit {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    background-color: var(--primary);
+    color: var(--primary_bg);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.revue-form-submit:hover {
+    opacity: 0.9;
+}
+
+.revue-form-footer {
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
+
+/* Search Filters */
+#search-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#search-filters label {
+    font-weight: 500;
+}
+
+#search-filters select {
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--bg);
+    color: var(--content);
+}
+
+/* TOC Active Link */
+.toc .inner a.active {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* Code Block Header */
+.code-block-container {
+    position: relative;
+    margin: 1.5em 0;
+}
+
+.code-block-header {
+    background-color: var(--tertiary);
+    padding: 0.5rem 1rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    line-height: 1.5;
+}
+
+.code-block-language {
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.code-block-filename {
+    font-style: italic;
+}
+
+.code-block-container .highlight {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}

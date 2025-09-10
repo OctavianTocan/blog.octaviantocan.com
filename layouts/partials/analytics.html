@@ -1,0 +1,19 @@
+{{- if (and (hugo.IsProduction) (site.Params.analytics.enable)) -}}
+    {{- $analytics := site.Params.analytics -}}
+    {{- if (eq $analytics.provider "plausible") -}}
+        {{- with $analytics.domain -}}
+            <script defer data-domain="{{ . }}" src="https://plausible.io/js/plausible.js"></script>
+        {{- end -}}
+    {{- else if (eq $analytics.provider "ga4") -}}
+        {{- with $analytics.ga4MeasurementId -}}
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', '{{ . }}');
+            </script>
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
