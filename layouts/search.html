@@ -1,0 +1,51 @@
+{{ define "title" }}
+    {{ .Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "head" }}
+    <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+    {{ $fusejs := resources.Get "js/fuse.basic.min.js" }}
+    {{ $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" .Site.Params.fuseOpts)) }}
+    {{ $search := (slice $fusejs $fastsearch) | resources.Concat "assets/js/search.js" | resources.Minify | fingerprint }}
+    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
+{{ end }}
+
+{{ define "main" }}
+<header class="page-header">
+    <h1>{{- .Title -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+
+<div id="searchbox">
+    <div id="search-filters">
+        <label for="section-filter">Section:</label>
+        <select id="section-filter">
+            <option value="">All</option>
+            {{- range .Site.Sections }}
+            <option value="{{ .Section }}">{{ .Title }}</option>
+            {{- end }}
+        </select>
+
+        <label for="tag-filter">Tag:</label>
+        <select id="tag-filter">
+            <option value="">All</option>
+            {{- range .Site.Taxonomies.tags.ByCount }}
+            <option value="{{ .Name }}">{{ .Name }} ({{ .Count }})</option>
+            {{- end }}
+        </select>
+    </div>
+    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default .Title }}"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+{{ end }}
