@@ -15,3 +15,33 @@ iframe {
 .entry-cover img {
     border: 1px solid var(--border);
 }
+
+/* Kit signup form styles */
+.kit-signup-form {
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.kit-signup-form h2 {
+    margin-top: 0;
+}
+
+.kit-signup-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: 60%;
+    margin-right: 10px;
+}
+
+.kit-signup-form button {
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--primary);
+    color: var(--primary_bg);
+    cursor: pointer;
+}
