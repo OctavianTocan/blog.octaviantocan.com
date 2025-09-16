@@ -82,6 +82,9 @@ Why this matters is simple:
 - That means every time you try to find it, you waste time searching.
 - Grouping + numbering avoids this problem.
 
+Here's what that looks like in practice:
+{{< ue-blueprint-iframe src="https://blueprintue.com/render/f-ns6ina/" >}}
+
 ---
 
 ## 4. What’s Still on the Table:
