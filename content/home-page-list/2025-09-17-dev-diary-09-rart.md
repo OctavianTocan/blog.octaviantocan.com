@@ -60,6 +60,8 @@ I’ve discussed my reasoning for using animation layers in these sorts of bluep
 [=== BUY THE TEMPLATE HERE: [Template Link Placeholder] ===]
 ```
 
+<script async data-uid="2cee45e8cf" src="https://octavian-tocan.kit.com/2cee45e8cf/index.js"></script>
+
 ---
 
 ## 3. Cleaning Up the Anim Graph:
