@@ -32,14 +32,6 @@ series: ["Blueprint Refactoring in UE5"]
 ShowToc: true
 
 TocOpen: true
-
-editPost:
-
-  URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/content"
-
-  Text: "Suggest Changes" # edit text
-
-  appendFilePath: true # to append file path to Edit link
 ---
 
 In programming, we often discuss the importance of writing code that is clean, modular, and reusable, whether that be in C++ or a visual scripting language like Blueprints for Unreal Engine 5.

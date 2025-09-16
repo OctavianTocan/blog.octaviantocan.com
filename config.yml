@@ -53,17 +53,18 @@ params:
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
+  hideFooter: true
   # comments: false
   images: ["images/papermod-cover.png"]
 
@@ -84,7 +85,7 @@ params:
   homeInfoParams:
     Title: "Welcome to My Corner of the Web 👋"
     Content: >
-      <p>Hey, I'm Tavi (Octavian), and this is where I document the messy, iterative reality of building things—whether that's debugging Unreal Engine performance issues, architecting workflow automation, or just trying to figure out why this one piece of code works perfectly in isolation but breaks everything in production.</p>
+      <p>Hey, I'm Octavian, and this is where I document the messy, iterative reality of building things—whether that's debugging Unreal Engine performance issues, architecting workflow automation, or just trying to figure out why this one piece of code works perfectly in isolation but breaks everything in production.</p>
       <br>
       <p>I’m obsessed with finding the best approach to any given problem, and thus I’m constantly switching approaches (which makes me a headache to work with, at times). But I think that’s where the interesting stuff happens. You probably won’t see a blog post from me claiming to have a “perfect solution to x” without a follow-up post discussing some other approach I found; it’s just the nature of the beast.</p>
       <br>
@@ -109,17 +110,11 @@ params:
     - name: Discord
       title: Join discord community
       url: "https://discord.gg/ahpmTvhVmp"
-    - name: X
-      title: Follow me on X
-      url: "https://x.com/OctavianTocan"
-    - name: KoFi
-      title: Buy me a Ko-Fi :)
-      url: "https://ko-fi.com/OctavianTocan"
 
-  editPost:
-    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/blob/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/blob/main/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # label:
   # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'

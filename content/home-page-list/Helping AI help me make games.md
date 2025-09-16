@@ -9,10 +9,6 @@ categories: ["AI", "Unreal Engine"]
 series: ["Helping AI help me make games"]
 ShowToc: true
 TocOpen: true
-editPost:
-    URL: "https://github.com/OctavianTocan/blog.octaviantocan.com/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 I've been giving some thought to the idea of creating an MCP for Unreal Engine that allows you to connect an AI model like Claude to Unreal Engine, not to do thing like what you see the YouTube gurus preach, like spawn cubes or create levels, which I've always found awfully lame, but instead to help enhance your daily workflows.
@@ -34,17 +30,20 @@ My first and most prioritized usage right now is the blueprint refactoring usage
 I'm thinking of taking some of the code I have in the BlueprintTraverser class, and moving it to a tool inside of custom implementation of the MCP thing.
 
 **Functions:**
+
 - `GetAllGraphNames` - Returns the names of all the graphs in the Blueprint
 - `GetAllEventNamesInGraph(String: graph_name)` - Returns the names of all the events in the specific graph in the asset
 - `GetAllFunctionNames` - Returns an array of strings with the function names
 - `GetFunctionInfo(String: function_name)` - Returns information about a specific function in JSON format with name, tooltip, category, whether it's pure, thread safe, const, plus all the inputs and outputs with their types
 
 **Variables:**
+
 - `GetAllVariableNames` - If I get one of these then it can use the names to access more information about this variable
 - `GetVariableInfo(String: variable_name)` - This one is really useful to get all the information about one specific variable
 - `SetVariableInfo(VariableInfo: variable_info)` - For making changes
 
 I could also add things like:
+
 - `GetFunctionExplanation(String: function_name)` - Explains what a function does in a simple manner
 - `CreateFunction(FunctionInfo: function_info)`
 
