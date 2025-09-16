@@ -56,11 +56,11 @@ I’ve discussed my reasoning for using animation layers in these sorts of bluep
 - The animation blueprint is big.
 - Splitting it into smaller chunks and naming them correctly makes it easier to understand what’s happening and where each piece belongs.
 
+{{<kit-download-form-shortcode file_identifier="rart-dev-diary-09"  >}}
+
 ```
 [=== BUY THE TEMPLATE HERE: [Template Link Placeholder] ===]
 ```
-
-<script async data-uid="2cee45e8cf" src="https://octavian-tocan.kit.com/2cee45e8cf/index.js"></script>
 
 ---
 

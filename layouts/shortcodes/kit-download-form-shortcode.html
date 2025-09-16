@@ -1,0 +1,5 @@
+<!-- filepath: f:\Git-Repositories\blog.octaviantocan.com\layouts\shortcodes\kit-download-form-shortcode.html -->
+{{ $fileIdentifier := .Get "file_identifier" | default "default_file_name" }} 
+{{ $formAction := .Get "formAction" | default "https://app.kit.com/forms/8543511/subscriptions" }} 
+{{ $userId := .Get "userId" | default "2cee45e8cf" }} 
+{{ partial "kit-download-form.html" (dict "file_identifier" $fileIdentifier "formAction" $formAction "userId" $userId) }}

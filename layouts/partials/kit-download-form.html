@@ -1,0 +1,113 @@
+{{ $formAction := .formAction | default "https://app.kit.com/forms/8543511/subscriptions" }} 
+{{ $fileIdentifier :=.file_identifier | default "default_file_name" }} 
+{{ $userId := .userId | default "2cee45e8cf" }}
+
+{{/* --- Component HTML --- */}}
+<div class="kit-form-wrapper">
+    <form action="{{ $formAction }}" method="post" class="kit-form" target="_blank" rel="noopener noreferrer">
+        
+        <h3>Download the files for this project!</h3>
+        <p>Enter your details below and I'll send the download link directly to your inbox.</p>
+        
+        <div class="kit-form-fields">
+            <input type="text" name="fields[first_name]" placeholder="First Name" required>
+            <input type="email" name="email_address" placeholder="Email Address" required>
+            <button type="submit">Download</button>
+        </div>
+        
+        {{/* These hidden fields are crucial. They tell ConvertKit which form this is (uid) 
+             and which file the user requested (requested_file custom field). */}}
+        <input type="hidden" name="user[uid]" value="{{ $userId }}">
+        <input type="hidden" name="fields[requested_file]" value="{{ $fileIdentifier }}">
+
+        <p class="kit-form-footer">We respect your privacy. Unsubscribe at anytime.</p>
+    </form>
+</div>
+
+
+{{/* --- Component Styles --- */}}
+{{/* These styles are scoped to this component to keep it self-contained. */}}
+<style>
+    :root {
+        --kit-text-primary: #1a202c;
+        --kit-text-secondary: #718096;
+        --kit-card-background: #ffffff;
+        --kit-border-color: #e2e8f0;
+        --kit-focus-ring-color: #2c5282;
+        --kit-button-color: #f6a6ab;
+        --kit-button-hover-color: #f48a91;
+        --kit-radius: 8px;
+        --kit-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .kit-form-wrapper {
+        background-color: var(--kit-card-background);
+        border: 1px solid var(--kit-border-color);
+        border-radius: var(--kit-radius);
+        padding: 2rem;
+        box-shadow: var(--kit-shadow);
+        margin: 2rem 0;
+    }
+
+    .kit-form h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: var(--kit-text-primary);
+        margin-bottom: 0.5rem;
+    }
+
+    .kit-form p {
+        color: var(--kit-text-secondary);
+        margin-bottom: 1.5rem;
+    }
+
+    .kit-form-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .kit-form-fields input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--kit-border-color);
+        border-radius: var(--kit-radius);
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+        transition: box-shadow 0.2s, border-color 0.2s;
+        -webkit-appearance: none;
+    }
+
+    .kit-form-fields input:focus {
+        outline: none;
+        border-color: var(--kit-focus-ring-color);
+        box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.2);
+    }
+
+    .kit-form-fields button {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        background-color: var(--kit-button-color);
+        color: white;
+        border-radius: var(--kit-radius);
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .kit-form-fields button:hover {
+        background-color: var(--kit-button-hover-color);
+    }
+
+    .kit-form-footer {
+        font-size: 0.8rem;
+        color: #a0aec0;
+        text-align: center;
+        margin: 0;
+    }
+</style>
+{{/* --- End Component --- */}}
